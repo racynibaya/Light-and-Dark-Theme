@@ -25,13 +25,14 @@ const toggleDarkLightMode = function (theme) {
   textBox.style.backgroundColor =
     theme === DARK_THEME ? 'rgb(255 255 255 / 50%)' : 'rgb(0 0 0 / 50%)';
 
-  toggleIcon.children[0].textContent = isDark ? 'Dark Mode' : 'Light Mode';
+  toggleIcon.children[0].textContent =
+    theme === DARK_THEME ? 'Dark Mode' : 'Light Mode';
 
-  isDark
+  theme === DARK_THEME
     ? toggleIcon.children[1].classList.replace('fa-sun', 'fa-moon')
     : toggleIcon.children[1].classList.replace('fa-moon', 'fa-sun');
 
-  isDark ? imageMode(DARK_THEME) : imageMode('light');
+  theme === DARK_THEME ? imageMode(DARK_THEME) : imageMode(LIGHT_THEME);
 };
 
 const setTheme = function (theme) {
