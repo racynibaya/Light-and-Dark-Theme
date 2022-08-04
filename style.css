@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Kaushan+Script&family=Oswald&display=swap');
 
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 :root,
 [data-theme='light'] {
   --primary-color: rgb(255, 92, 92);
@@ -23,7 +30,6 @@
 }
 
 html {
-  box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
