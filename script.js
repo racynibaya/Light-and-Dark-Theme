@@ -70,3 +70,9 @@ window.addEventListener('resize', function () {
     toggleText.hidden = false;
   }
 });
+
+if (window.innerWidth <= 1000) {
+  toggleText.hidden = true;
+} else {
+  toggleText.hidden = false;
+}
