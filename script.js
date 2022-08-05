@@ -1,6 +1,7 @@
 const toggleSwitch = document.querySelector('input[type="checkbox"]');
 const nav = getElement('nav');
 const toggleIcon = getElement('toggle-icon');
+const toggleText = getElement('toggle-text');
 const image1 = getElement('image1');
 const image2 = getElement('image2');
 const image3 = getElement('image3');
@@ -60,3 +61,12 @@ if (currentTheme) {
     toggleDarkLightMode(LIGHT_THEME);
   }
 }
+
+// Responsive
+window.addEventListener('resize', function () {
+  if (window.innerWidth <= 1000) {
+    toggleText.hidden = true;
+  } else {
+    toggleText.hidden = false;
+  }
+});

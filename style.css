@@ -271,3 +271,99 @@ input:checked + .slider::before {
 .social-icons a {
   border-bottom: 3px transparent;
 }
+
+@media screen and (max-width: 1000px) {
+  nav {
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: 22px;
+  }
+
+  .theme-switch-wrapper {
+    right: 15px;
+    top: 22px;
+  }
+
+  .theme-switch-wrapper span {
+    margin-right: 5px;
+    font-size: 0.5rem;
+  }
+
+  .fas {
+    font-size: 18px;
+    margin-right: 5px;
+  }
+
+  .slider {
+    background: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: 0.4s;
+  }
+
+  .theme-switch {
+    height: 24px;
+    position: relative;
+    width: 50px;
+  }
+
+  .slider::before {
+    height: 20px;
+    width: 20px;
+    bottom: 2px;
+  }
+
+  input:checked + .slider::before {
+    transform: translateX(22px);
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+  .about-container {
+    flex-direction: column;
+  }
+  .image-container {
+    width: 90%;
+    margin-bottom: 12px;
+  }
+
+  .text-box {
+    width: 90%;
+  }
+
+  .buttons {
+    width: 90%;
+    text-align: center;
+  }
+
+  button {
+    margin-bottom: 12px;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  a:last-child {
+    margin-right: 0;
+  }
+
+  a:last-child i {
+    margin: 0;
+  }
+
+  .fa-brands {
+    font-size: 50px;
+    margin-right: 8px;
+  }
+}
