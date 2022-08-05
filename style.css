@@ -370,3 +370,26 @@ input:checked + .slider::before {
     margin-right: 8px;
   }
 }
+
+@media screen and (max-width: 600px) {
+  nav a {
+    margin-right: 5px;
+  }
+
+  nav a:last-child {
+    margin-right: 10px;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  h2:not(.image-container h2) {
+    font-size: 18px;
+  }
+
+  .fa-brands {
+    font-size: 35px;
+    margin-right: 8px;
+  }
+}
