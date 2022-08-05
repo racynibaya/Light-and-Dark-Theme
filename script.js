@@ -1,23 +1,23 @@
 const toggleSwitch = document.querySelector('input[type="checkbox"]');
-const nav = getElement('nav');
-const toggleIcon = getElement('toggle-icon');
-const toggleText = getElement('toggle-text');
-const image1 = getElement('image1');
-const image2 = getElement('image2');
-const image3 = getElement('image3');
-const textBox = getElement('textbox');
+const nav = getElementID('nav');
+const toggleIcon = getElementID('toggle-icon');
+const toggleText = getElementID('toggle-text');
+const image1 = getElementID('image1');
+const image2 = getElementID('image2');
+const image3 = getElementID('image3');
+const textBox = getElementID('textbox');
 
 const DARK_THEME = 'dark';
 const LIGHT_THEME = 'light';
 
-function getElement(id) {
+function getElementID(id) {
   return document.getElementById(id);
 }
 
-const imageMode = function (color) {
-  image1.src = `./img/undraw_proud_coder_${color}.svg`;
-  image2.src = `./img/undraw_feeling_proud_${color}.svg`;
-  image3.src = `./img/undraw_conceptual_idea_${color}.svg`;
+const imageMode = function (theme) {
+  image1.src = `./img/undraw_proud_coder_${theme}.svg`;
+  image2.src = `./img/undraw_feeling_proud_${theme}.svg`;
+  image3.src = `./img/undraw_conceptual_idea_${theme}.svg`;
 };
 const toggleDarkLightMode = function (theme) {
   nav.style.backgroundColor =
